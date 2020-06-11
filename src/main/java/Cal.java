@@ -5,6 +5,7 @@ public class Cal {
         a.minus(4,2);
         a.multiply(5,4);
         a.divide(10,2);
+        a.average();
     }
     public void sum (int x , int y ){
         int c = x + y;
@@ -21,5 +22,14 @@ public class Cal {
     public void divide(int x , int y){
         int c = x / y;
         System.out.println("The Divide Result : " + c);
+    }
+    public void average(){
+        int[] x = {1,2,3};
+        int sum = 0 ;
+        int y = x.length;
+        for (int i : x){
+            sum += i;
+        }
+        System.out.println("The Average Result : " + sum / y);
     }
 }
