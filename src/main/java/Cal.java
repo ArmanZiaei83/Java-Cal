@@ -6,6 +6,7 @@ public class Cal {
         a.multiply(5,4);
         a.divide(10,2);
         a.average();
+        a.primeNum(15);
     }
     public void sum (int x , int y ){
         int c = x + y;
@@ -31,5 +32,15 @@ public class Cal {
             sum += i;
         }
         System.out.println("The Average Result : " + sum / y);
+    }
+    public void primeNum(int x ){
+        for (int i = 2 ; i <= x /x ; i++){
+            if (x%i == 0){
+                System.out.println("The " + x + "Isn't a prime number");
+            }
+            else{
+                System.out.println("The " + x + "Is a prime Number");
+            }
+        }
     }
 }
